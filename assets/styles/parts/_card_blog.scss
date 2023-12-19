@@ -1,0 +1,103 @@
+.blog-card {
+    width: 100%;
+    border-radius: 15px;
+    background-color: var(--c-white);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.17);
+
+    &:not(:last-child) {
+        margin-bottom: 25px;
+    }
+
+    .blog-wrapper {
+        padding: 20px;
+
+        .-header {
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--c-light-gray);
+    
+            .blog-img {
+                width: 100%;
+                border-radius: 15px;
+            }
+    
+            .-title {
+                font-size: 1rem;
+                color: var(--c-black);
+            }
+
+            .-blog-intro {
+                display: flex;
+                justify-content: space-between;
+
+                @include mobile {
+                    gap: 25px;
+                    flex-direction: column;
+
+                    .item {
+                        margin: auto;
+                    }
+                }
+
+                .-profile {
+                    gap: 15px;
+                    display: flex;
+    
+                    img {
+                        height: 35px;
+                        margin: auto 0;
+                    }
+    
+                    .-fullname {
+                        font-weight: 700;
+                        letter-spacing: 1px;
+                        color: var(--c-black);
+                        text-transform: capitalize;
+                    }
+    
+                    .-role {
+                        font-size: 12px;
+                        font-weight: 500;
+                        letter-spacing: .5px;
+                        text-transform: capitalize;
+                    }
+                }
+
+                .-reactions {
+                    gap: 25px;
+                    display: flex;
+                    margin: auto 0;
+
+                    @include mobile {
+                        margin: auto;
+                    }
+
+                    .-item {
+                        gap: 15px;
+                        display: flex;
+
+                        img {
+                            height: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    
+        .-content {
+            gap: 20px;
+            display: flex;
+            padding: 20px 0;
+            flex-direction: column;
+
+            p {
+                font-size: 18px;
+                line-height: 1rem;
+            }
+
+            .-tags h4 {
+                margin: auto 0;
+                padding-right: 25px;
+            }
+        }
+    }
+}

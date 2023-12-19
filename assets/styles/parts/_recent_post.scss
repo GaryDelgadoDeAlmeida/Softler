@@ -1,0 +1,44 @@
+.recent-post {
+    gap: 15px;
+    display: flex;
+    color: var(--c-black);
+
+    &:not(:last-child) {
+        margin-bottom: 25px;
+    }
+
+    .-image {
+        display: flex;
+        margin: auto 0;
+
+        img {
+            width: 80px;
+        }
+    }
+
+    .-post-bio {
+        gap: 10px;
+        display: flex;
+        margin: auto 0;
+        flex-direction: column;
+
+        .-title {
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        .-publish-date {
+            gap: 10px;
+            display: flex;
+
+            .-img {
+                height: 15px;
+            }
+    
+            .-date {
+                font-size: 14px;
+            }
+        }
+    }
+}

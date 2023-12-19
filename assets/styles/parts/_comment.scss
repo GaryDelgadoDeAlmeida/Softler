@@ -1,0 +1,37 @@
+.comment {
+    gap: 15px;
+    display: flex;
+
+    &:not(:last-child) {
+        margin-bottom: 25px;
+    }
+
+    .-image {
+        margin: auto 0;
+        height: 100px;
+
+        img {
+            height: 100%;
+        }
+    }
+
+    .-user-message {
+        display: flex;
+        margin: auto 0;
+        flex-direction: column;
+
+        .-name {
+            margin: 0;
+            padding-bottom: 15px;
+            color: var(--c-black);
+        }
+
+        .-message {
+            margin: 0;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 1rem;
+            letter-spacing: 1px;
+        }
+    }
+}

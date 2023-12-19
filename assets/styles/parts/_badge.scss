@@ -1,0 +1,20 @@
+.badge {
+    display: flex;
+    padding: 10px 15px;
+    text-align: center;
+    border-radius: 5px;
+    color: var(--c-black);
+    background-color: var(--c-light-blue);
+
+    &:hover {
+        transition: .5s;
+        color: var(--c-white);
+        background-color: var(--c-violet);
+    }
+
+    span {
+        margin: auto;
+        font-size: 12px;
+        font-weight: 600;
+    }
+}

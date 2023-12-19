@@ -1,0 +1,231 @@
+/* ----------------------------------------------- *\
+    Texte
+\* ----------------------------------------------- */
+small {
+    font-size: 12px;
+}
+
+.txt-left {
+    text-align: left;
+}
+
+.txt-left-important {
+    text-align: left !important;
+}
+
+.txt-center {
+    text-align: center;
+}
+
+.txt-right {
+    text-align: right;
+}
+
+/* ----------------------------------------------- *\
+    Fond size
+\* ----------------------------------------------- */
+.fz-10 {
+    font-size: 10px;
+}
+
+.fz-12 {
+    font-size: 12px;
+}
+.fz-14 {
+    font-size: 14px;
+}
+
+.fz-16 {
+    font-size: 16px;
+}
+
+.fz-18 {
+    font-size: 18px;
+}
+
+.fz-20 {
+    font-size: 20px;
+}
+
+/* ----------------------------------------------- *\
+    Fond weight
+\* ----------------------------------------------- */
+.f-bold {
+    font-weight: bold;
+}
+
+/* ----------------------------------------------- *\
+    Margin
+\* ----------------------------------------------- */
+.m-auto {
+    margin: auto;
+}
+
+.m-0 {
+    margin: 0;
+}
+
+.m-t-15 {
+    margin-top: 15px;
+}
+
+.m-t-25 {
+    margin-top: 25px;
+}
+
+@include mobile {
+    .mobile-m-t-15 {
+        margin-top: 15px;
+    }
+}
+
+
+/* ----------------------------------------------- *\
+    Padding
+\* ----------------------------------------------- */
+.p-0 {
+    padding: 0;
+}
+
+
+/* ----------------------------------------------- *\
+    Width
+\* ----------------------------------------------- */
+.w-auto {
+    width: auto;
+}
+
+.w-100px {
+    width: 100px;
+}
+
+.w-150px {
+    width: 150px;
+}
+
+.w-200px {
+    width: 200px;
+}
+
+.w-250px {
+    width: 250px;
+}
+
+.w-300px {
+    width: 300px;
+}
+
+.w-500px {
+    width: 500px;
+}
+
+.w-700px {
+    width: 700px;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.w-33 {
+    width: calc(100% / 3);
+}
+
+.w-40 {
+    width: 40%;
+}
+
+.w-66 {
+    width: calc((100% / 3) * 2);
+}
+
+@include mobile {
+    .mobile-w-100 {
+        width: 100%;
+    }
+}
+
+
+/* ----------------------------------------------- *\
+    Height
+\* ----------------------------------------------- */
+.h-50px {
+    height: 50px;
+}
+
+.h-100px {
+    height: 100px;
+}
+
+.h-150px {
+    height: 150px;
+}
+
+.h-200px {
+    height: 200px;
+}
+
+.h-m-250px {
+    min-height: 250px;
+}
+
+.h-m-300px {
+    min-height: 300px;
+}
+
+
+/* ----------------------------------------------- *\
+    Background color
+\* ----------------------------------------------- */
+.bg-lightBlue {
+    background-color: var(--c-light-blue);
+}
+
+/* ----------------------------------------------- *\
+    Display
+\* ----------------------------------------------- */
+.d-flex {
+    display: flex;
+
+    &.-wrap {
+        flex-wrap: wrap;
+    }
+
+    @include mobile {
+        flex-direction: column;
+    }
+
+    .item {
+        flex: 1;
+    }
+}
+
+.d-col {
+    display: flex;
+    line-height: normal;
+    flex-direction: column;
+}
+
+.-g-0 {
+    gap: 0;
+}
+
+.-g-5 {
+    gap: 5px;
+}
+
+.-g-10 {
+    gap: 10px;
+}
+
+.-g-15 {
+    gap: 15px;
+}
+
+.-g-25 {
+    gap: 25px;
+}
+
+.-g-1-5rem {
+    gap: 1.5rem;
+}

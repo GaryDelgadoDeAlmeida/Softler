@@ -1,0 +1,85 @@
+/* ----------------------------------------------- *\
+    Form
+\* ----------------------------------------------- */
+.form {
+    // 
+
+    .form-field-inline {
+        gap: 25px;
+        display: flex;
+
+        &:not(:last-child) {
+            margin-bottom: 25px;
+        }
+
+        @include tablet {
+            flex-direction: column;
+        }
+
+        @include mobile {
+            flex-direction: row;
+        }
+
+        @include tiny_mobile {
+            flex-direction: column;
+        }
+
+        .form-field {
+            flex: 1;
+
+            &:not(:last-child) {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .form-field {
+        gap: 5px;
+        display: flex;
+        line-height: 30px;
+        flex-direction: column;
+
+        &:not(:last-child) {
+            margin-bottom: 25px;
+        }
+
+        &.-inline {
+            gap: 0;
+            flex-direction: row;
+
+            input {
+                flex: 1;
+                border-radius: 0;
+            }
+
+            .btn {
+                padding: 15px;
+
+                img {
+                    height: 15px;
+                }
+            }
+        }
+
+        input {
+            padding: .5rem;
+            border-radius: 5px;
+            border: 1px solid var(--c-light-gray);
+        }
+
+        textarea {
+            padding: .5rem;
+            min-height: 80px;
+            border-radius: 5px;
+            border: 1px solid var(--c-light-gray);
+        }
+    }
+
+    .form-button {
+        text-align: center;
+
+        .btn:not(:first-child) {
+            margin-left: 10px;
+        }
+    }
+}

@@ -1,0 +1,51 @@
+:root {
+    // Palette
+    --c-primary: var(--c-violet);
+    --c-secondary: var(--c-cyan);
+    --c-threerd: var(--c-white);
+
+    // Primary Color
+    --c-white: #ffffff;
+    --c-gray: #666666;
+    --c-light-gray: #ccc;
+    --c-black: #000000;
+
+    // Specific Color
+    --c-red-orange: #FF4A17;
+    --c-violet: #7a2fda;
+    --c-violet-bis: #7f2edb;
+    --c-violet-blue: #5932d3;
+    --c-night-blue: #5832d3;
+    --c-cyan: #dbf2fc;
+    --c-light-blue: #ecf9fd;
+}
+
+@mixin tablet {
+    @media screen and (max-width: 991px) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin tiny_mobile {
+    @media screen and (max-width: 480px) {
+        @content;
+    }
+}
+
+@import "./parts/site";
+@import "./parts/button";
+@import "./parts/helper";
+@import "./parts/form";
+@import "./parts/card_address";
+@import "./parts/card_blog";
+@import "./parts/card_widget";
+@import "./parts/badge";
+@import "./parts/category";
+@import "./parts/recent_post";
+@import "./parts/comment";

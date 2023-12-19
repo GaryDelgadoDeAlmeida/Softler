@@ -1,0 +1,38 @@
+/* ----------------------------------------------- *\
+    Address card
+\* ----------------------------------------------- */
+.address-card {
+    gap: 25px;
+    display: flex;
+    color: var(--c-white);
+
+    &:not(:last-child) {
+        margin-bottom: 1.5rem;
+    }
+
+    @include tiny_mobile {
+        text-align: center;
+        flex-direction: column;
+    }
+
+    img {
+        width: auto;
+        height: 70px;
+    }
+
+    .-content {
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+
+        .-title {
+            margin: 0;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+        
+        .-details {
+            margin: 0;
+        }
+    }
+}
