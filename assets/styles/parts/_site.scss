@@ -70,7 +70,7 @@ html, body {
                 height: 100%;
                 content: "";
                 position: absolute;
-                background: linear-gradient(to right, #903be4 0%, #6132d5 100%);
+                background: var(--radient-violet);
             }
 
             .hero-wrapper {
@@ -141,13 +141,30 @@ html, body {
                     max-width: 300px;
                     padding: 3rem 10%;
                     border-radius: 15px;
-                    background: linear-gradient(to right, #903be4 0%, #6132d5 100%);
+                    background: var(--radient-violet);
 
                     @include mobile {
                         max-width: 100%;
                     }
                 }
             }
+        }
+
+        .page-title {
+            padding: 0;
+            font-size: 1rem;
+            margin: 0 0 25px 0;
+            text-align: center;
+            color: var(--c-black);
+            text-transform: uppercase;
+        }
+
+        .page-subtitle {
+            margin: 0 0 50px 0;
+            padding: 0;
+            display: flex;
+            font-size: 16px;
+            justify-content: center;
         }
     }
 

@@ -1,0 +1,35 @@
+.subscribe {
+    display: flex;
+
+    @include mobile {
+        flex-direction: column;
+    }
+
+    .-left, .-right {
+        flex: 1;
+    }
+
+    .-left {
+        text-align: center;
+
+        img {
+            width: 400px;
+        }
+    }
+
+    .-right {
+        margin: auto 0;
+        margin-left: 25px;
+        
+        h2 {
+            margin: 0;
+            font-size: 2rem;
+            padding-bottom: 25px;
+            color: var(--c-black);
+        }
+
+        @include mobile {
+            margin: 25px 0 0 0;
+        }
+    }
+}

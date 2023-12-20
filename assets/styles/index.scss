@@ -8,6 +8,7 @@
     --c-white: #ffffff;
     --c-gray: #666666;
     --c-light-gray: #ccc;
+    --c-blue: #0c63e4;
     --c-black: #000000;
 
     // Specific Color
@@ -18,6 +19,9 @@
     --c-night-blue: #5832d3;
     --c-cyan: #dbf2fc;
     --c-light-blue: #ecf9fd;
+
+    // Radient
+    --radient-violet: linear-gradient(to right, #903be4 0%, #6132d5 100%);
 }
 
 @mixin tablet {
@@ -42,6 +46,7 @@
 @import "./parts/button";
 @import "./parts/helper";
 @import "./parts/form";
+@import "./parts/card";
 @import "./parts/card_address";
 @import "./parts/card_blog";
 @import "./parts/card_widget";
@@ -49,3 +54,6 @@
 @import "./parts/category";
 @import "./parts/recent_post";
 @import "./parts/comment";
+@import "./parts/subscribe";
+@import "./parts/faq";
+@import "./parts/collapse";

@@ -1,0 +1,16 @@
+.faq {
+    gap: 25px;
+    display: flex;
+
+    .-left, .-right {
+        flex: 1;
+    }
+
+    .-right {
+        text-align: center;
+
+        img {
+            width: 500px;
+        }
+    }
+}

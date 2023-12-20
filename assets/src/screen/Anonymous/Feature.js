@@ -1,6 +1,8 @@
 import React from "react";
 import Header from "../../component/part/Header";
 import { Link } from "react-router-dom";
+import SubscribeForm from "../../component/form/SubscribeForm";
+import CollapseList from "../../component/part/CollapseList";
 
 export default function Feature() {
 
@@ -18,48 +20,86 @@ export default function Feature() {
                 </div>
             </div>
             
+            {/* Features */}
             <div className={"page-section"}>
                 <div className={"page-wrapper"}>
                     <h2 className={"page-title"}>OUR FEATURES</h2>
-                    <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</small>
+                    <small className={"page-subtitle"}>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</small>
+                    
                     <div className={"d-flex -g-25"}>
-                        <div className={"card"}></div>
-                        <div className={"card"}></div>
-                        <div className={"card"}></div>
-                    </div>
-                </div>
-            </div>
-
-            <div className={"page-section bg-lightBlue"}>
-                <div className={"page-wrapper"}>
-                    <div className={"d-flex"}>
-                        <img src={`${window.location.origin}/content/img/newsletter.png`} alt={""} />
-                        <div className={""}>
-                            <h2>Subscribe To Our Newsletter</h2>
-                            
-                            <form className={"form"}>
-                                <div className={"form-field"}>
-                                    <input type={"text"} />
-                                </div>
-                                <div className={"form-button"}>
-                                    <button className={"btn btn-violet-blue -inline-flex -g-10 fz-18 h-50px"} type={"submit"}>
-                                        <span>Subscribe</span>
-                                    </button>
-                                </div>
-                            </form>
+                        <div className={"card item"}>
+                            <div className={"-banner"}></div>
+                            <div className={"-header"}>
+                                <img src={`${window.location.origin}/content/svg/dashboard-monitoring.svg`} alt={""} />
+                            </div>
+                            <div className={"-content"}>
+                                <h3 className={"-title"}>Exclusive Design</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, incidunt.</p>
+                            </div>
+                            <div className={"-shape"}>
+                                <img src={`${window.location.origin}/content/img/shape-3.png`} alt={""} />
+                            </div>
+                        </div>
+                        
+                        <div className={"card item"}>
+                            <div className={"-banner"}></div>
+                            <div className={"-header"}>
+                                <img src={`${window.location.origin}/content/svg/web.svg`} alt={""} />
+                            </div>
+                            <div className={"-content"}>
+                                <h3 className={"-title"}>Cloud Data</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, incidunt.</p>
+                            </div>
+                            <div className={"-shape"}>
+                                <img src={`${window.location.origin}/content/img/shape-3.png`} alt={""} />
+                            </div>
+                        </div>
+                        
+                        <div className={"card item"}>
+                            <div className={"-banner"}></div>
+                            <div className={"-header"}>
+                                <img src={`${window.location.origin}/content/svg/user-male.svg`} alt={""} />
+                            </div>
+                            <div className={"-content"}>
+                                <h3 className={"-title"}>24/7 Support</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, incidunt.</p>
+                            </div>
+                            <div className={"-shape"}>
+                                <img src={`${window.location.origin}/content/img/shape-3.png`} alt={""} />
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
+            {/* Subscribe */}
+            <div className={"page-section bg-lightBlue"}>
+                <div className={"page-wrapper"}>
+                    <div className={"subscribe"}>
+                        <div className={"-left"}>
+                            <img src={`${window.location.origin}/content/img/newsletter.png`} alt={""} />
+                        </div>
+                        <div className={"-right"}>
+                            <h2>Subscribe To Our Newsletter</h2>
+                            <SubscribeForm />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {/* FAQ */}
             <div className={"page-section"}>
                 <div className={"page-wrapper"}>
                     <h2 className={"page-title"}>FAQ</h2>
-                    <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</small>
+                    <small className={"page-subtitle"}>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</small>
 
-                    <div className={"d-flex"}>
-                        <div className={""}></div>
-                        <img src={`${window.location.origin}/content/img/logo.png`} alt={""} />
+                    <div className={"faq"}>
+                        <div className={"-left"}>
+                            <CollapseList />
+                        </div>
+                        <div className={"-right"}>
+                            <img src={`${window.location.origin}/content/img/FAQs-amico.png`} alt={""} />
+                        </div>
                     </div>
                 </div>
             </div>
