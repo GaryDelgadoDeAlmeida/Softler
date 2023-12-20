@@ -1,0 +1,71 @@
+.member {
+    text-align: center;
+
+    .-member-photo {
+        overflow: hidden;
+        position: relative;
+        text-align: center;
+
+        &:hover {
+            
+            .-photo {
+                transition: .3s;
+                border: 2px solid var(--c-violet);
+            }
+
+            .social-links {
+                bottom: -5px;
+            }
+        }
+
+        .-photo {
+            border-radius: 50%;
+        }
+
+        .social-links {
+            left: 0;
+            right: 0;
+            height: 100px;
+            bottom: -100px;
+            position: absolute;
+            transition: all .5s ease;
+            background: url("../../../public/content/img/team-shape.png") top center no-repeat;
+
+            .-links {
+                top: 0;
+                bottom: 0;
+                gap: 15px;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+
+                .-link {
+                    width: 30px;
+                    height: 30px;
+                    display: flex;
+                    margin: auto 0;
+                    border-radius: 50%;
+                    background-color: transparent;
+                    border: 1px solid var(--c-white);
+
+                    img {
+                        margin: auto;
+                    }
+                }
+            }
+        }
+    }
+
+    .-member-info {
+        color: var(--c-black);
+
+        .-name {
+            font-size: .7rem;
+            margin-bottom: 10px;
+        }
+
+        .-job {
+            font-size: 14px;
+        }
+    }
+}

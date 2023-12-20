@@ -27,7 +27,7 @@ export default function Overview() {
                     
                     <div className={"carrousel"}>
                         <div className={"-items"}>
-                            <div className={"-item"}>
+                            <div className={"-item -active"}>
                                 <img src={`${window.location.origin}/content/img/11.jpg`} alt={""} />
                             </div>
                             <div className={"-item"}>
@@ -37,7 +37,11 @@ export default function Overview() {
                                 <img src={`${window.location.origin}/content/img/22.jpg`} alt={""} />
                             </div>
                         </div>
-                        <div className={"-pagination"}></div>
+                        <div className={"-pagination"}>
+                            <button className={"-button -active"}></button>
+                            <button className={"-button"}></button>
+                            <button className={"-button"}></button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -63,10 +67,24 @@ export default function Overview() {
                     <h2 className={"page-title"}>Our experts</h2>
                     <small className={"page-subtitle"}>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</small>
 
-                    <div className={""}>
+                    <div className={"d-grid -col-3"}>
                         <div className={"member"}>
                             <div className={"-member-photo"}>
-                                <img src={`${window.location.origin}/content/img/1.jpg`} alt={""} />
+                                <img className={"-photo"} src={`${window.location.origin}/content/img/1.jpg`} alt={""} />
+                                
+                                <div className={"social-links"}>
+                                    <div className={"-links"}>
+                                        <a className={"-link"} href={"#"}>
+                                            <img src={`${window.location.origin}/content/svg/facebook.svg`} alt={""} />
+                                        </a>
+                                        <a className={"-link"} href={"#"}>
+                                            <img src={`${window.location.origin}/content/svg/twitter.svg`} alt={""} />
+                                        </a>
+                                        <a className={"-link"} href={"#"}>
+                                            <img src={`${window.location.origin}/content/svg/instagram.svg`} alt={""} />
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                             <div className={"-member-info"}>
                                 <h4 className={"-name"}>Pabelo Twin</h4>
@@ -75,7 +93,21 @@ export default function Overview() {
                         </div>
                         <div className={"member"}>
                             <div className={"-member-photo"}>
-                                <img src={`${window.location.origin}/content/img/2.jpg`} alt={""} />
+                                <img className={"-photo"} src={`${window.location.origin}/content/img/2.jpg`} alt={""} />
+                                
+                                <div className={"social-links"}>
+                                    <div className={"-links"}>
+                                        <a className={"-link"} href={"#"}>
+                                            <img src={`${window.location.origin}/content/svg/facebook.svg`} alt={""} />
+                                        </a>
+                                        <a className={"-link"} href={"#"}>
+                                            <img src={`${window.location.origin}/content/svg/twitter.svg`} alt={""} />
+                                        </a>
+                                        <a className={"-link"} href={"#"}>
+                                            <img src={`${window.location.origin}/content/svg/instagram.svg`} alt={""} />
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                             <div className={"-member-info"}>
                                 <h4 className={"-name"}>Angel Noore</h4>
@@ -84,7 +116,21 @@ export default function Overview() {
                         </div>
                         <div className={"member"}>
                             <div className={"-member-photo"}>
-                                <img src={`${window.location.origin}/content/img/3.jpg`} alt={""} />
+                                <img className={"-photo"} src={`${window.location.origin}/content/img/3.jpg`} alt={""} />
+                                
+                                <div className={"social-links"}>
+                                    <div className={"-links"}>
+                                        <a className={"-link"} href={"#"}>
+                                            <img src={`${window.location.origin}/content/svg/facebook.svg`} alt={""} />
+                                        </a>
+                                        <a className={"-link"} href={"#"}>
+                                            <img src={`${window.location.origin}/content/svg/twitter.svg`} alt={""} />
+                                        </a>
+                                        <a className={"-link"} href={"#"}>
+                                            <img src={`${window.location.origin}/content/svg/instagram.svg`} alt={""} />
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                             <div className={"-member-info"}>
                                 <h4 className={"-name"}>Jhon Smith</h4>

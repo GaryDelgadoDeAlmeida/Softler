@@ -1,5 +1,6 @@
 .collapse {
     transition: all .5s ease;
+    background-color: var(--c-white);
     border: 1px solid var(--c-light-gray);
 
     &:not(:last-child) {
