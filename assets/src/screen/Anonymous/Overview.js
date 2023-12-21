@@ -2,11 +2,13 @@ import React from "react";
 import Header from "../../component/part/Header";
 import { Link } from "react-router-dom";
 import SubscribeForm from "../../component/form/SubscribeForm";
+import Carrousel from "../../component/part/Carrousel";
 
 export default function Overview() {
 
     return (
         <Header>
+            {/* Page Header */}
             <div className={"page-hero"}>
                 <div className={"page-wrapper"}>
                     <div className={"hero-wrapper"}>
@@ -25,24 +27,7 @@ export default function Overview() {
                     <h2 className={"page-title"}>Software overview</h2>
                     <small className={"page-subtitle"}>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</small>
                     
-                    <div className={"carrousel"}>
-                        <div className={"-items"}>
-                            <div className={"-item -active"}>
-                                <img src={`${window.location.origin}/content/img/11.jpg`} alt={""} />
-                            </div>
-                            <div className={"-item"}>
-                                <img src={`${window.location.origin}/content/img/12.jpg`} alt={""} />
-                            </div>
-                            <div className={"-item"}>
-                                <img src={`${window.location.origin}/content/img/22.jpg`} alt={""} />
-                            </div>
-                        </div>
-                        <div className={"-pagination"}>
-                            <button className={"-button -active"}></button>
-                            <button className={"-button"}></button>
-                            <button className={"-button"}></button>
-                        </div>
-                    </div>
+                    <Carrousel />
                 </div>
             </div>
 

@@ -24,6 +24,12 @@
     --radient-violet: linear-gradient(to right, #903be4 0%, #6132d5 100%);
 }
 
+@mixin desktop {
+    @media screen and (min-width: 992px) {
+        @content;
+    }
+}
+
 @mixin tablet {
     @media screen and (max-width: 991px) {
         @content;
