@@ -12,10 +12,10 @@ export default function Overview() {
             <div className={"page-hero"}>
                 <div className={"page-wrapper"}>
                     <div className={"hero-wrapper"}>
-                        <h1>Overview</h1>
+                        <h1>Software Overview</h1>
                         <ul>
                             <li><Link to={"/"}>Home</Link></li>
-                            <li className={"current-page"}>Overview</li>
+                            <li className={"current-page"}>Software Overview</li>
                         </ul>
                     </div>
                 </div>

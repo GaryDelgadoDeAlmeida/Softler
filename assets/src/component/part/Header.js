@@ -26,13 +26,31 @@ export default function Header(props) {
                     <div className={"logo"}>
                         <img src={`${window.location.origin}/content/img/logo.png`} alt={"logo"} />
                     </div>
-                    <nav className={"menu"}>
-                        <li className={"-item"}><Link to={"/"}>Home</Link></li>
-                        <li className={"-item"}><Link to={"/overview"}>Overview</Link></li>
-                        <li className={"-item"}><Link to={"/feature"}>Features</Link></li>
-                        <li className={"-item"}><Link to={"/blog"}>Blog</Link></li>
-                        <li className={"-item"}><Link to={"/contact"}>Contact</Link></li>
-                    </nav>
+                    <div className={"tablet-hidden m-vertical-auto"}>
+                        <nav className={"menu"}>
+                            <li className={"-item"}><Link to={"/"}>Home</Link></li>
+                            <li className={"-item"}><Link to={"/overview"}>Overview</Link></li>
+                            <li className={"-item"}><Link to={"/feature"}>Features</Link></li>
+                            <li className={"-item"}><Link to={"/blog"}>Blog</Link></li>
+                            <li className={"-item"}><Link to={"/contact"}>Contact</Link></li>
+                        </nav>
+                    </div>
+                    <div className={"mobile-menu desktop-hidden"}>
+                        <input id={"bars"} type={"checkbox"} hidden />
+                        <label htmlFor={"bars"}>
+                            <img src={`${window.location.origin}/content/svg/bars-staggered.svg`} alt={""} />
+                        </label>
+                        <nav className={"menu-vertical"}>
+                            <label htmlFor={"bars"}>
+                                <img src={`${window.location.origin}/content/svg/bars-staggered.svg`} alt={""} />
+                            </label>
+                            <li className={"-item"}><Link to={"/"}>Home</Link></li>
+                            <li className={"-item"}><Link to={"/overview"}>Overview</Link></li>
+                            <li className={"-item"}><Link to={"/feature"}>Features</Link></li>
+                            <li className={"-item"}><Link to={"/blog"}>Blog</Link></li>
+                            <li className={"-item"}><Link to={"/contact"}>Contact</Link></li>
+                        </nav>
+                    </div>
                 </div>
             </div>
             

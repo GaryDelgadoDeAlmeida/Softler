@@ -61,6 +61,14 @@ small {
     margin: auto;
 }
 
+.m-horizontal-auto {
+    margin: 0 auto;
+}
+
+.m-vertical-auto {
+    margin: auto 0;
+}
+
 .m-0 {
     margin: 0;
 }
@@ -183,6 +191,28 @@ small {
 
 .bg-transparent {
     background-color: transparent;
+}
+
+
+/* ----------------------------------------------- *\
+    Hidden
+\* ----------------------------------------------- */
+@include desktop {
+    .desktop-hidden {
+        display: none;
+    }
+}
+
+@include tablet {
+    .tablet-hidden {
+        display: none;
+    }
+}
+
+@include mobile {
+    .mobile-hidden {
+        display: none;
+    }
 }
 
 /* ----------------------------------------------- *\

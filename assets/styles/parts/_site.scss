@@ -15,6 +15,7 @@ html, body {
     .page-header {
         font-size: 16px;
         background-color: var(--c-white);
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.17);
 
         &.-scroll {
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.17);
@@ -40,6 +41,59 @@ html, body {
                     
                     a {
                         color: var(--c-black);
+                    }
+                }
+            }
+
+            .mobile-menu {
+                margin: auto 0;
+
+                label {
+                    display: flex;
+                    margin: auto 0;
+                    cursor: pointer;
+                    
+                    img {
+                        height: 35px;
+                    }
+                }
+
+                #bars:checked ~ .menu-vertical {
+                    display: flex;
+                    transition: .3s;
+                }
+                
+                #bars:not(:checked) ~ .menu-vertical {
+                    display: none;
+                    transition: .3s;
+                }
+
+                .menu-vertical {
+                    top: 0;
+                    right: 0;
+                    z-index: 5;
+                    width: 200px;
+                    height: 100%;
+                    padding: 25px;
+                    position: fixed;
+                    list-style: none;
+                    flex-direction: column;
+                    background-color: var(--c-white);
+                    box-shadow: 0 0 15px rgba(0, 0, 0, 0.17);
+
+                    label {
+                        margin: 0 0 25px 0;
+                        justify-content: end;
+                    }
+
+                    .-item {
+                        display: flex;
+
+                        a {
+                            width: 100%;
+                            padding: 15px;
+                            color: var(--c-black);
+                        }
                     }
                 }
             }
