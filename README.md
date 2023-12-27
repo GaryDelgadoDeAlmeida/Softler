@@ -38,3 +38,27 @@ Si les styles ne sont pas automatiquement compiler, veuillez utiliser la command
 ```bash
     sass --style compressed ./public/assets/sass/index.scss ./public/assets/build/app.css
 ```
+
+## Authentification
+
+L'authentification se fait via un formulaire de connexion standard. La méthode de connexion côté backend différe de mes habites de conception mais reste fondamentalement le même. Le système de connexion va générer un token qui sera retourné à l'utilisateur et pour tout les prochains call API, le token généré devra être utilisé dans le header de la requête : `Authorization: "Bearer <token>"`. Le projet utilisant ReactJS, j'utiliserai la librarie `axios` pour les call API (beaucoup plus simple que `fetch` de JavaScript).
+
+- `lexik/jwt-authentication-bundle` (côté Symfony)
+- `axios/axios` (côté ReactJS)
+
+### Configuration Symfony
+
+Une fois que la dépendance a été ajouté, il faudra maintenant générer une clé. Cette clé sera ensuite utilisé pour générer les token qui seront envoyer aux utilisateurs de la plateforme (normalement, se ne sera que les admin). Voici la commande pour générer ces clés :
+```bash
+    php bin/console lexik:jwt:generate-keypair
+```
+Une fois la commande ci-dessus lancée, elle va créer un sous-dossier `jwt` dans le dossier `config`. Dans ce sous-dossier, on aura 2 fichiers, ces 2 fichiers sont les clés privés et publics qui seront utlisé dans les actions de génération du token. A ce niveau, on a rien de plus.
+
+Il faut maintenant configurer l'authentification dans le fichier `packages/security.yaml`.
+
+
+### Configuration ReactJS
+
+Il n'y a rien a faire côté ReactJS. La seule qu'il faudra faire, c'est appelé la route `/api/login_check` dans le formulaire de connexion.
+
+Si le token a expiré, l'API retournera une erreur `402`, quand l'API nous retournera cette erreur, il faudra re-générer le token (et donc se reconnecter).
