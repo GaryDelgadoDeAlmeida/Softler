@@ -282,7 +282,7 @@ export default function Home() {
                     <small className={"page-subtitle"}>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</small>
 
                     <div className={"d-grid -col-3 -t-col-2 -m-col-1"}>
-                        <div className={"item"}>
+                        <div className={"-item"}>
                             <div className={"price"}>
                                 <div className={"-sup-header"}>
                                     <span>Basic</span>
@@ -310,7 +310,7 @@ export default function Home() {
                                 </div>
                             </div>
                         </div>
-                        <div className={"item"}>
+                        <div className={"-item"}>
                             <div className={"price -even"}>
                                 <div className={"-sup-header"}>
                                     <span>Standard</span>
@@ -339,7 +339,7 @@ export default function Home() {
                                 </div>
                             </div>
                         </div>
-                        <div className={"item"}>
+                        <div className={"-item"}>
                             <div className={"price"}>
                                 <div className={"-sup-header"}>
                                     <span>Premium</span>
