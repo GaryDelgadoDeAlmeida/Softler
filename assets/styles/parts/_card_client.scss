@@ -1,0 +1,22 @@
+.client-card {
+    gap: 25px;
+    display: flex;
+
+    @include tablet {
+        flex-direction: column;
+    }
+
+    .-header, .-content {
+        z-index: 2;
+    }
+
+    .-header {
+        margin: auto 0;
+        z-index: 2;
+    }
+
+    .-content {
+        background-color: var(--c-white);
+        padding: 25px;
+    }
+}

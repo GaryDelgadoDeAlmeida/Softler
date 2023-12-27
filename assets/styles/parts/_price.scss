@@ -1,0 +1,107 @@
+.price {
+    position: relative;
+    border-radius: 25px;
+    background: var(--radient-violet);
+
+    &.-even {
+        background: var(--radient-blue);
+    }
+
+    .-sup-header {
+        top: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        
+        span {
+            margin: 0;
+            width: 100px;
+            text-align: center;
+            letter-spacing: 1px;
+            color: var(--c-black);
+            padding: 10px 10px 15px 10px;
+            border-bottom-left-radius: 50%;
+            border-bottom-right-radius: 50%;
+            background-color: var(--c-white);
+            
+        }
+    }
+
+    .-header {
+        padding: 100px 0 70px;
+
+        .-icon {
+            max-width: 100%;
+            margin: auto;
+            padding: 25px;
+            display: flex;
+            border-radius: 50%;
+            background-size: cover;
+            justify-content: center;
+            background: url("../../../public/content/img/price-1.png") center no-repeat;
+
+            &.-even {
+                background-size: cover;
+                background: url("../../../public/content/img/price-2.png") center no-repeat;
+            }
+
+            img {
+                height: 50px;
+            }
+        }
+    }
+
+    .-content {
+        padding: 0 2rem;
+        color: var(--c-white);
+
+        .-amount {
+            display: flex;
+            justify-content: space-between;
+
+            span {
+                margin: auto 0;
+                font-weight: 600;
+
+                &:nth-child(1) {
+                    font-size: 1.2rem;
+                }
+                
+                &:nth-child(2) {
+                    font-size: .5rem;
+                }
+            }
+        }
+
+        .-description {
+            gap: 25px;
+            display: flex;
+            padding-top: 75px;
+            flex-direction: column;
+
+            li {
+                list-style: none;
+                position: relative;
+                padding-left: 35px;
+
+                &::before {
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                    content: "";
+                    width: 20px;
+                    height: 20px;
+                    position: absolute;
+                    background-image: url("../../../public/content/svg/check-white.svg");
+                }
+            }
+        }
+    }
+
+    .-footer {
+        padding: 75px 0;
+        text-align: center;
+    }
+}

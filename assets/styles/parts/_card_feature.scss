@@ -1,0 +1,38 @@
+.feature-card {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+
+    .-header {
+        width: 100%;
+
+        .-bubble {
+            padding: 25px;
+            width: fit-content;
+            border-radius: 50%;
+            block-size: fit-content;
+            background: var(--radient-violet);
+
+            img {
+                height: 35px;
+            }
+        }
+    }
+
+    .-content {
+        color: var(--c-white);
+
+        h3 {
+            padding: 0;
+            margin: 15px 0;
+            font-size: .7rem;
+            letter-spacing: 1px;
+        }
+
+        p {
+            margin: 0;
+            line-height: 1rem;
+            color: var(--c-light-gray);
+        }
+    }
+}

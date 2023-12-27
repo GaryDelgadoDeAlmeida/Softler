@@ -22,6 +22,7 @@
 
     // Radient
     --radient-violet: linear-gradient(to right, #903be4 0%, #6132d5 100%);
+    --radient-blue: linear-gradient(to right, #45a3f8 0%, #6132d5 100%);
 }
 
 @mixin desktop {
@@ -54,8 +55,11 @@
 @import "./parts/form";
 @import "./parts/card";
 @import "./parts/card_address";
+@import "./parts/card_client";
 @import "./parts/card_blog";
 @import "./parts/card_widget";
+@import "./parts/card_work";
+@import "./parts/card_feature";
 @import "./parts/badge";
 @import "./parts/category";
 @import "./parts/recent_post";
@@ -65,3 +69,8 @@
 @import "./parts/collapse";
 @import "./parts/member";
 @import "./parts/carrousel";
+@import "./parts/trust_banner";
+@import "./parts/app_banner";
+@import "./parts/feature";
+@import "./parts/rotation";
+@import "./parts/price";

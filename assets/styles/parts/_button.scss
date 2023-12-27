@@ -64,4 +64,16 @@ a, a:hover {
         background-color: transparent;
         border: 2px solid var(--c-white);
     }
+
+    &.btn-outline-white {
+        border-radius: 5px;
+        color: var(--c-white);
+        background-color: transparent;
+        border: 2px solid var(--c-white);
+
+        &:hover {
+            color: var(--c-black);
+            background-color: var(--c-white);
+        }
+    }
 }

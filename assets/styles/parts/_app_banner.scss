@@ -1,0 +1,70 @@
+.app {
+    gap: 25px;
+    display: flex;
+
+    @include tablet {
+        flex-direction: column;
+    }
+
+    .app-img, .app-intro {
+        flex: 1;
+    }
+
+    .app-img {
+        margin: auto 0;
+        position: relative;
+        text-align: center;
+
+        .app-logo {
+            z-index: 2;
+            position: relative;
+        }
+    }
+
+    .app-intro {
+        padding: 0 25px;
+        color: var(--c-black);
+
+        @include tablet {
+            padding: 25px;
+        }
+
+        .app-suptitle {
+            font-size: .6rem;
+            font-weight: 500;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .app-title {
+            margin: 25px 0;
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+    }
+}
+
+.app-banner {
+    padding: 3rem 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-image: url("../../../public/content/img/shape-1.png");
+
+    .app-banner-wrapper {
+        gap: 25px;
+        display: flex;
+        color: var(--c-black);
+        justify-content: center;
+
+        @include tablet {
+            flex-direction: column;
+        }
+
+        span {
+            padding: 1rem;
+            font-weight: 500;
+            font-size: 1.7rem;
+        }
+    }
+}

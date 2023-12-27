@@ -255,6 +255,26 @@ small {
             grid-template-columns: repeat(1, 1fr);
         }
     }
+    
+    &.-col-2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include tablet {
+        &.-t-col-2 {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        &.-t-col-1 {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+    
+    @include mobile {
+        &.-m-col-1 {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
 }
 
 .-g-0 {

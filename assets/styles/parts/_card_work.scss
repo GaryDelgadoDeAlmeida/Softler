@@ -1,0 +1,38 @@
+.work-card {
+    gap: 25px;
+    display: flex;
+    padding: 25px 0;
+
+    .-header {
+        margin: auto 0;
+
+        .-image {
+            padding: 20px;
+            width: fit-content;
+            border-radius: 50%;
+            background: var(--radient-violet);
+
+            img {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+
+    .-content {
+        color: var(--c-black);
+        
+        h3 {
+            font-size: .8rem;
+            margin: 0 0 15px 0;
+            letter-spacing: 1px;
+        }
+
+        p {
+            margin: 0;
+            padding: 0;
+            color: var(--c-gray);
+            line-height: 1rem;
+        }
+    }
+}

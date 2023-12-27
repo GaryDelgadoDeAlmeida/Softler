@@ -1,0 +1,43 @@
+.feature {
+    // padding: 3rem 0;
+    color: var(--c-white);
+
+    .feature-wrapper {
+        gap: 25px;
+        display: flex;
+
+        @include tablet {
+            flex-direction: column;
+        }
+
+        .feature-left {
+            margin: auto 0;
+            width: calc(100% - 600px);
+    
+            @include tablet {
+                width: 100%;
+            }
+        }
+    
+        .feature-right {
+            width: 600px;
+            margin: auto 0;
+            padding: 0 0 0 3rem;
+    
+            @include tablet {
+                width: auto;
+                padding: 3rem 0;
+            }
+    
+            .feature-suptitle {
+                font-size: .8rem;
+                font-weight: 500;
+                text-transform: uppercase;
+            }
+    
+            .feature-title {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}

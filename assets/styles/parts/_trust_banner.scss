@@ -1,0 +1,48 @@
+.trust-banner {
+    border-radius: 50px;
+    background: var(--radient-violet);
+
+    .trust-banner-wrapper {
+        gap: 25px;
+        margin: auto;
+        display: flex;
+        padding: 2.5rem 2rem;
+
+        @include mobile {
+            flex-direction: column;
+        }
+
+        .-text {
+            width: 400px;
+            color: var(--c-white);
+
+            h3 {
+                font-size: 1.2rem;
+            }
+
+            p {
+                font-size: 12px;
+                font-weight: 300;
+                letter-spacing: 1px;
+
+                .-number {
+                    margin: 0 5px;
+                    font-size: .8rem;
+                    font-weight: 600;
+                    padding-bottom: 5px;
+                    border-bottom: 1px solid var(--c-white);
+                }
+            }
+        }
+
+        .-bands {
+            margin: auto 0;
+            display: flex;
+            overflow-x: hidden;
+
+            img {
+                height: 80px;
+            }
+        }
+    }
+}
