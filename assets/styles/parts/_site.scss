@@ -109,6 +109,54 @@ html, body {
             width: calc(100% - 60px);
         }
 
+        .page-section {
+            padding: 3rem 0;
+            // padding: 5rem 0; // Old
+
+            .item {
+                margin: auto 0;
+            }
+
+            .contact-page {
+                display: flex;
+                margin: 0 auto;
+
+                @include mobile {
+                    margin: 0;
+                    display: block;
+                }
+
+                .address-box {
+                    margin: 0 auto;
+                    max-width: 300px;
+                    padding: 3rem 10%;
+                    border-radius: 15px;
+                    background: var(--radient-violet);
+
+                    @include mobile {
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+
+        .page-title {
+            padding: 0;
+            font-size: 1rem;
+            margin: 0 0 25px 0;
+            text-align: center;
+            color: var(--c-black);
+            text-transform: uppercase;
+        }
+
+        .page-subtitle {
+            margin: 0 0 50px 0;
+            padding: 0;
+            display: flex;
+            font-size: 16px;
+            justify-content: center;
+        }
+
         .page-home-hero {
             background: url("../../../public/content/img/hdr-dn-1.png") top left no-repeat;
             
@@ -152,6 +200,10 @@ html, body {
                     @include tablet {
                         text-align: center;
                         background-position: top center;
+                    }
+
+                    img {
+                        width: 100%;
                     }
                 }
             }
@@ -226,58 +278,20 @@ html, body {
             background-size: cover;
             background-repeat: no-repeat;
             background-position: top left;
+            background-color: var(--c-violet-bis);
             background-image: url("../../../public/content/img/feature-bg.png");
-
-            @include desktop {
-                background-color: var(--c-violet-bis);
-            }
         }
 
-        .page-section {
-            padding: 5rem 0;
+        .page-contact {
+            margin-bottom: -6rem;
 
-            .item {
-                margin: auto 0;
+            &.page-section {
+                padding-top: 0;
             }
 
-            .contact-page {
-                display: flex;
-                margin: 0 auto;
-
-                @include mobile {
-                    margin: 0;
-                    display: block;
-                }
-
-                .address-box {
-                    margin: 0 auto;
-                    max-width: 300px;
-                    padding: 3rem 10%;
-                    border-radius: 15px;
-                    background: var(--radient-violet);
-
-                    @include mobile {
-                        max-width: 100%;
-                    }
-                }
+            .page-wrapper {
+                position: relative;
             }
-        }
-
-        .page-title {
-            padding: 0;
-            font-size: 1rem;
-            margin: 0 0 25px 0;
-            text-align: center;
-            color: var(--c-black);
-            text-transform: uppercase;
-        }
-
-        .page-subtitle {
-            margin: 0 0 50px 0;
-            padding: 0;
-            display: flex;
-            font-size: 16px;
-            justify-content: center;
         }
     }
 

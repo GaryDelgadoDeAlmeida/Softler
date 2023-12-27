@@ -1,0 +1,56 @@
+.contact-card {
+    gap: 25px;
+    display: flex;
+    padding: 2rem 2rem 0;
+    border-radius: 50px;
+    background-color: var(--c-white);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.17);
+
+    @include tablet {
+        flex-direction: column;
+    }
+
+    .-left {
+        width: 50%;
+        color: var(--c-black);
+
+        @include tablet {
+            width: 100%;
+        }
+
+        .-suptitle {
+            font-size: .6rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+    }
+
+    .-right {
+        flex: 1;
+        display: flex;
+        text-align: center;
+        background-size: contain;
+        padding: 25px 25px 0 25px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url("../../../public/content/img/contact-shape.png");
+
+        @include tablet {
+            padding: 25px 0 0 0;
+            justify-content: center;
+        }
+        
+        img {
+            width: 100%;
+
+            @include tablet {
+                max-width: 600px;
+            }
+        }
+    }
+}

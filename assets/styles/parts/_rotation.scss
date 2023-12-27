@@ -4,9 +4,10 @@
     right: 0;
     bottom: 0;
     z-index: 1;
-    width: 550px;
+    width: 100%;
     margin: auto;
     display: flex;
+    max-width: 550px;
     position: absolute;
     animation:spin 15s linear infinite;
     -moz-animation:spin 15s linear infinite;

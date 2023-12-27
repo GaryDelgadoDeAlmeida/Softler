@@ -14,7 +14,8 @@
             margin: 0 auto;
     
             .-item {
-                height: 500px;
+                width: 100%;
+                max-width: 800px;
                 display: none;
 
                 &.-active {

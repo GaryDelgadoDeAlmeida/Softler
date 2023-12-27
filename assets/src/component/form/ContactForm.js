@@ -74,7 +74,7 @@ export default function ContactForm() {
             
             <div className={"form-button"}>
                 <button type={"submit"} className={"btn btn-violet-blue -inline-flex -g-10 fz-18 h-50px"}>
-                    <span>Send message</span>
+                    <span>Send Message</span>
                     <img src={`${window.location.origin}/content/svg/chevron-right.svg`} alt={""} />
                 </button>
             </div>

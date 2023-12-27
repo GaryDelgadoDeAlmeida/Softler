@@ -2,6 +2,10 @@
     gap: 25px;
     display: flex;
 
+    @include tablet {
+        flex-direction: column;
+    }
+
     .-left, .-right {
         flex: 1;
     }
@@ -10,7 +14,8 @@
         text-align: center;
 
         img {
-            width: 500px;
+            width: 100%;
+            max-width: 500px;
         }
     }
 }

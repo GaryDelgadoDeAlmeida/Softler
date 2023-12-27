@@ -465,12 +465,12 @@ export default function Home() {
                                 <img src={`${window.location.origin}/content/img/1(1).jpg`} alt={""} />
                             </div>
                             <div className={"-content"}>
-                                <div className={"d-flex"}>
-                                    <div className={"item d-flex -g-10"}>
+                                <div className={"d-flex -row"}>
+                                    <div className={"item d-flex -row -g-10"}>
                                         <img src={`${window.location.origin}/content/svg/calendar-days.svg`} alt={""} />
                                         <span>April 06, 2023</span>
                                     </div>
-                                    <div className={"item d-flex -g-10"}>
+                                    <div className={"item d-flex -row -g-10"}>
                                         <img src={`${window.location.origin}/content/svg/comments.svg`} alt={""} />
                                         <span>26 Comments</span>
                                     </div>
@@ -490,12 +490,12 @@ export default function Home() {
                                 <img src={`${window.location.origin}/content/img/2(1).jpg`} alt={""} />
                             </div>
                             <div className={"-content"}>
-                                <div className={"d-flex"}>
-                                    <div className={"item d-flex -g-10"}>
+                                <div className={"d-flex -row"}>
+                                    <div className={"item d-flex -row -g-10"}>
                                         <img src={`${window.location.origin}/content/svg/calendar-days.svg`} alt={""} />
                                         <span>April 06, 2023</span>
                                     </div>
-                                    <div className={"item d-flex -g-10"}>
+                                    <div className={"item d-flex -row -g-10"}>
                                         <img src={`${window.location.origin}/content/svg/comments.svg`} alt={""} />
                                         <span>26 Comments</span>
                                     </div>
@@ -515,12 +515,12 @@ export default function Home() {
                                 <img src={`${window.location.origin}/content/img/3(1).jpg`} alt={""} />
                             </div>
                             <div className={"-content"}>
-                                <div className={"d-flex"}>
-                                    <div className={"item d-flex -g-10"}>
+                                <div className={"d-flex -row"}>
+                                    <div className={"item d-flex -row -g-10"}>
                                         <img src={`${window.location.origin}/content/svg/calendar-days.svg`} alt={""} />
                                         <span>April 06, 2023</span>
                                     </div>
-                                    <div className={"item d-flex -g-10"}>
+                                    <div className={"item d-flex -row -g-10"}>
                                         <img src={`${window.location.origin}/content/svg/comments.svg`} alt={""} />
                                         <span>26 Comments</span>
                                     </div>
@@ -540,17 +540,17 @@ export default function Home() {
             </div>
 
             {/* Contact form */}
-            <div className={"page-section"}>
+            <div className={"page-section page-contact"}>
                 <div className={"page-wrapper"}>
-                    <div className={"card"}>
-                        <div className={"d-flex -g-25"}>
-                            <div className={"item"}>
-                                <ContactForm />
-                            </div>
+                    <div className={"contact-card"}>
+                        <div className={"-left"}>
+                            <span className={"-suptitle"}>Contact us</span>
+                            <h3 className={"-title"}>Have Any Query?</h3>
                             
-                            <div className={"item"}>
-                                <img src={`${window.location.origin}/content/img/contact-pic.png`} alt={""} />
-                            </div>
+                            <ContactForm />
+                        </div>
+                        <div className={"-right"}>
+                            <img src={`${window.location.origin}/content/img/contact-pic.png`} alt={""} />
                         </div>
                     </div>
                 </div>

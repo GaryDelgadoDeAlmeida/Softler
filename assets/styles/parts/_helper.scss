@@ -157,6 +157,10 @@ small {
 /* ----------------------------------------------- *\
     Height
 \* ----------------------------------------------- */
+.h-25px {
+    height: 25px;
+}
+
 .h-50px {
     height: 50px;
 }
@@ -227,6 +231,10 @@ small {
 
     @include mobile {
         flex-direction: column;
+
+        &.-row {
+            flex-direction: row;
+        }
     }
 
     .item {
