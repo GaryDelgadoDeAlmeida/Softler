@@ -459,24 +459,81 @@ export default function Home() {
                     <h2 className={"page-title"}>Latest news</h2>
                     <small className={"page-subtitle"}>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</small>
 
-                    <div className={"d-col -col-3"}>
+                    <div className={"d-grid -col-3"}>
                         <div className={"news-card"}>
                             <div className={"-header"}>
                                 <img src={`${window.location.origin}/content/img/1(1).jpg`} alt={""} />
                             </div>
-                            <div className={"-content"}></div>
+                            <div className={"-content"}>
+                                <div className={"d-flex"}>
+                                    <div className={"item d-flex -g-10"}>
+                                        <img src={`${window.location.origin}/content/svg/calendar-days.svg`} alt={""} />
+                                        <span>April 06, 2023</span>
+                                    </div>
+                                    <div className={"item d-flex -g-10"}>
+                                        <img src={`${window.location.origin}/content/svg/comments.svg`} alt={""} />
+                                        <span>26 Comments</span>
+                                    </div>
+                                </div>
+                                <h4 className={"-title"}>Cotton Candy Muffin Marzipan Carrot</h4>
+                                <div className={"-author"}>
+                                    <img src={`${window.location.origin}/content/img/user-1.png`} alt={""} />
+                                    <div className={"-name"}>
+                                        <span>Claive Moore</span>
+                                        <span>Admin</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div className={"news-card"}>
                             <div className={"-header"}>
                                 <img src={`${window.location.origin}/content/img/2(1).jpg`} alt={""} />
                             </div>
-                            <div className={"-content"}></div>
+                            <div className={"-content"}>
+                                <div className={"d-flex"}>
+                                    <div className={"item d-flex -g-10"}>
+                                        <img src={`${window.location.origin}/content/svg/calendar-days.svg`} alt={""} />
+                                        <span>April 06, 2023</span>
+                                    </div>
+                                    <div className={"item d-flex -g-10"}>
+                                        <img src={`${window.location.origin}/content/svg/comments.svg`} alt={""} />
+                                        <span>26 Comments</span>
+                                    </div>
+                                </div>
+                                <h4 className={"-title"}>Cake Lemon Drops Chocolate Cake Icing</h4>
+                                <div className={"-author"}>
+                                    <img src={`${window.location.origin}/content/img/user-2.png`} alt={""} />
+                                    <div className={"-name"}>
+                                        <span>Claive Moore</span>
+                                        <span>Admin</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div className={"news-card"}>
                             <div className={"-header"}>
                                 <img src={`${window.location.origin}/content/img/3(1).jpg`} alt={""} />
                             </div>
-                            <div className={"-content"}></div>
+                            <div className={"-content"}>
+                                <div className={"d-flex"}>
+                                    <div className={"item d-flex -g-10"}>
+                                        <img src={`${window.location.origin}/content/svg/calendar-days.svg`} alt={""} />
+                                        <span>April 06, 2023</span>
+                                    </div>
+                                    <div className={"item d-flex -g-10"}>
+                                        <img src={`${window.location.origin}/content/svg/comments.svg`} alt={""} />
+                                        <span>26 Comments</span>
+                                    </div>
+                                </div>
+                                <h4 className={"-title"}>Jujubes Tart Fruitcake Tart Bonbon Chocolate Cake</h4>
+                                <div className={"-author"}>
+                                    <img src={`${window.location.origin}/content/img/user-3.png`} alt={""} />
+                                    <div className={"-name"}>
+                                        <span>Claive Moore</span>
+                                        <span>Admin</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
