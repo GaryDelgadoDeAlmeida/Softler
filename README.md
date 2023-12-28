@@ -14,6 +14,23 @@ Le but de ce site est tout simplement pour tester et pratiquer mes capacités de
 
 ## Installation
 
+### Database
+
+Si la base de données n'est pas créer
+```bash
+    symfony console doctrine:database:create
+```
+
+Ensuite, une fois la BDD créer, il faut maintenant générer les migrations s'il ne sont pas déjà générer. Par défault, les fichiers de migrations sont stockés dans le répertoire migrations à la racine du projet Symfony.
+```bash
+    symfony console m:migration
+```
+
+Une fois les fichiers de migration générer, il faut les executer. Pour faire cela, il faut aller à la racine du projet Symfony, puis executer la commande suivante :
+```bash
+    symfony console doctrine:migration:migrate
+```
+
 ### React
 
 Pour installer toutes les dépendances nécessaires côté ReactJS :
@@ -62,3 +79,12 @@ Il faut maintenant configurer l'authentification dans le fichier `packages/secur
 Il n'y a rien a faire côté ReactJS. La seule qu'il faudra faire, c'est appelé la route `/api/login_check` dans le formulaire de connexion.
 
 Si le token a expiré, l'API retournera une erreur `402`, quand l'API nous retournera cette erreur, il faudra re-générer le token (et donc se reconnecter).
+
+## Command
+
+### Symfony
+Pour générer un mot de passe hasher
+
+```bash
+    bin/console security:hash-password
+```

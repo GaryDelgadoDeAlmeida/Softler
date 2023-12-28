@@ -109,6 +109,12 @@ html, body {
             width: calc(100% - 60px);
         }
 
+        .page-content-header {
+            height: 50px;
+            background-color: var(--c-white);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.17);
+        }
+
         .page-section {
             padding: 3rem 0;
             // padding: 5rem 0; // Old
